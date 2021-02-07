@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!-<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TestingMatrix</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Index CSS -->
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+       
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-2 p-3 mb-2 bg-info text-white border borderSizer" id="sidebarStyle">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill border border-light bg-dark" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="nav-users-tab" data-toggle="tab" href="#nav-users" role="tab" aria-controls="nav-users" aria-selected="true">Users</a>
+                          <a class="nav-item nav-link" id="nav-select-tab" data-toggle="tab" href="#nav-select" role="tab" aria-controls="nav-select" aria-selected="false">Select</a>
+                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                          <a class="nav-item nav-link" id="nav-other-tab" data-toggle="tab" href="#nav-other" role="tab" aria-controls="nav-other" aria-selected="false">Other</a>
+                          <a class="nav-item nav-link" id="nav-other1-tab" data-toggle="tab" href="#nav-other1" role="tab" aria-controls="nav-other1" aria-selected="false">Other1</a>
+                          <a class="nav-item nav-link" id="nav-other2-tab" data-toggle="tab" href="#nav-other2" role="tab" aria-controls="nav-other2" aria-selected="false">Other2</a>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+
+                        <!-- Users Tab -->
+                        <div class="tab-pane fade show active m-2" id="nav-users" role="tabpanel" aria-labelledby="nav-users-tab">
+                          <table class="table table-bordered table-dark table-striped table-hover">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">User</th>
+                                <th scope="col">Machine Name</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center">
+                                <td>brandonp</td>
+                                <td>x1brandonp</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <!-- Select Tab -->
+                        <div class="tab-pane fade m-2" id="nav-select" role="tabpanel" aria-labelledby="nav-select-tab">
+                          <form>
+                            <label for="colFormLabelSm" class="col-form-label col-form-label-lg">Fetch Items Filters:</label>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Product ID:</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1. Capture</option>
+                                <option>2. Content Store</option>
+                                <option>3. Flex</option>
+                                <option>4. Advanced Capture</option>
+                                <option>5. Export</option>
+                                <option>6. Import</option>
+                              </select>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-sm-12">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                  <label class="form-check-label" for="gridCheck1">
+                                    HotFix Item
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Test Number: </label>
+                              <input type="number" value="0"/>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-sm-12">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                  <label class="form-check-label" for="gridCheck1">
+                                    Is Active
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Contact</div>
+                        <div class="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab">Other</div>
+                        <div class="tab-pane fade" id="nav-other1" role="tabpanel" aria-labelledby="nav-other1-tab">Other1</div>
+                        <div class="tab-pane fade" id="nav-other2" role="tabpanel" aria-labelledby="nav-other2-tab">Other2</div>
+                      </div>
+                </div>
+                <div class="col-10 p-3 mb-2 bg-info text-dark border borderSizem">
+                  <div class="topTable bg-primary customHeightTop">
+                    <table class="table table-bordered table-dark table-striped table-hover">
+                      <!--<caption class="text-dark text-center">List of users</caption>-->
+                      <thead>
+                        <tr class="text-center">
+                          <th scope="col">P/F</th>
+                          <th scope="col">ProductID</th>
+                          <th scope="col">HotFix</th>
+                          <th scope="col">RefID</th>
+                          <th scope="col">ID</th>
+                          <th scope="col">FeatureLevel</th>
+                          <th scope="col">FeaturePriority</th>
+                          <th scope="col">TfsItem</th>
+                          <th scope="col">Test Num</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td><input type="checkbox" name="P/F"></td>
+                          <th scope="row">1</th>
+                          <td>False</td>
+                          <td>-1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="bottomQuery bg-danger customHeightBottom">
+                    <div class="input-group mb-3 w-75 mx-auto buttonBorder1">
+                      <textarea class="form-control resizeTextarea" aria-label="With textarea" placeholder="Enter Sql Query"></textarea>
+                      <div class="input-group-append">
+                        <button class="btn btn-dark" type="button"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

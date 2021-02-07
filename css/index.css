@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+}
+
+#sidebarStyle {
+    height: 100%;
+}
+
+.borderSizer {
+    border-width: 10px !important;
+    border-color: red !important;
+}
+
+.borderSizem {
+    border-top-width: 10px !important;
+    border-right-width: 10px !important;
+    border-bottom-width: 10px !important;
+    border-color: red !important;
+}
+
+.topTable {
+    overflow: auto;
+}
+
+.bottomQuery {
+
+}
+
+.customHeightTop {
+    height: 90%;
+}
+
+.customHeightBottom {
+    height: 10%;
+}
+
+.buttonBorder1 {
+    border: 2px solid black !important;
+    border-radius: 7px;
+}
+
+.resizeTextarea {
+    resize: none;
+}
